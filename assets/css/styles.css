@@ -375,10 +375,9 @@ a {
 }
 
 #collection .title p {
-    opacity: 0.420;
     width: 391px;
-    background-color: #b8a47e;
-    color: #8a8172;
+    background-color: #e1d8c9;
+    color: #807768;
 }
 
 #contact {
@@ -466,6 +465,25 @@ a {
     font-family: "Roboto";
     width: 162px;
     padding: 15px 0;
+}
+
+#contact .email input {
+    width: 134px;
+    height: 24px;
+    background-color: #ffffff;
+    border: 1px solid #f7f7f7;
+    padding: 0;
+}
+
+#contact .email button {
+    width: 36px;
+    height: 24px;
+    background-color: #292929;
+    border: 1px solid #d0d0d0;
+}
+
+#contact .email button img {
+    margin-bottom: 1px;
 }
 
 #end {
