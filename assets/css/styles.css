@@ -9,10 +9,9 @@ a {
 
 #sidebar {
     width: 100%;
-    position: fixed;
+    position: absolute;
     display: flex;
     z-index: 999;
-    display: none;
 }
 
 #sidebar .logo {
@@ -43,9 +42,26 @@ a {
 }
 
 #sidebar li {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     margin: 0px;
-    line-height: 100px;
+    height: 100px;
+}
+
+#sidebar li .line {
+    width: 30px;
+    height: 2px;
+}
+
+#sidebar li .point {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+}
+
+#sidebar li:hover .line,
+#sidebar li:hover .point {
+    background-color: #b8a47e;
 }
 
 #sidebar li a {
@@ -55,7 +71,7 @@ a {
     text-transform: uppercase;
     color: #000000;
     font-weight: 700;
-    padding: 10px 30px;
+    padding: 0px 10px;
 }
 
 #sidebar .nav-sidebar {
@@ -82,7 +98,7 @@ a {
     background-color: #b8a47e;
 }
 
-#sidebar .nav-sidebar .active {
+#sidebar .nav-sidebar .active:hover {
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -94,14 +110,14 @@ a {
     margin: 20px;
 }
 
-#sidebar .active p {
+#sidebar .active:hover p {
     font-size: 28px;
     text-transform: uppercase;
     color: #000000;
     font-weight: 400;
 }
 
-#sidebar .no-active p {
+#sidebar .active p {
     font-size: 12px;
     line-height: 26px;
     text-transform: uppercase;
@@ -429,7 +445,27 @@ a {
     color: #000000;
     font-weight: 400;
     font-family: "Roboto";
+    margin: 35px 200px 0 0;
+}
+
+#contact .email {
     margin-top: 35px;
+    width: max-content;
+}
+
+#contact .email b{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+#contact .email p{
+    font-size: 9px;
+    line-height: 12px;
+    color: #383838;
+    font-weight: 250;
+    font-family: "Roboto";
+    width: 162px;
+    padding: 15px 0;
 }
 
 #end {
